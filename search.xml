@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>利用python制作小型计算器（入门）</title>
+      <link href="/2022/12/30/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
+      <url>/2022/12/30/%E8%AE%A1%E7%AE%97%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<p>这是一个python的源码：</p><pre><code class="python">import random as rmwhile True:    print(&#39;1 加法&#39;)    print(&#39;2 减法&#39;)    print(&#39;3 乘法&#39;)    print(&#39;4 除法&#39;)    print(&#39;5 随机&#39;)    choice=input(&#39;请输入你的选择&#39;)    if choice==&#39;5&#39;:        choice=str(rm.randint(1,4))        if choice==&#39;1&#39;:            x=float(input(&#39;请输入第一个加数&#39;))            y=float(input(&#39;请输入第二个加数&#39;))            result=x+y        elif choice==&#39;2&#39;:            x=float(input(&#39;请输入被减数&#39;))            y=float(input(&#39;请输入减数&#39;))            result=x-y        elif choice==&#39;3&#39;:            x=float(input(&#39;请输入第一个因数&#39;))            y=float(input(&#39;请输入第二个因数&#39;))            result=x*y        elif choice==&#39;4&#39;:            x=float(input(&#39;请输入被除数&#39;))            y=float(input(&#39;请输入除数&#39;))            while y==0:                input(&#39;除数不能为0，按回车继续&#39;)                y=float(input(&#39;请输入除数&#39;))            result=x/y    else:        if choice==&#39;1&#39;:            x=float(input(&#39;请输入第一个加数&#39;))            y=float(input(&#39;请输入第二个加数&#39;))            result=x+y        elif choice==&#39;2&#39;:            x=float(input(&#39;请输入被减数&#39;))            y=float(input(&#39;请输入减数&#39;))            result=x-y        elif choice==&#39;3&#39;:            x=float(input(&#39;请输入第一个因数&#39;))            y=float(input(&#39;请输入第二个因数&#39;))            result=x*y        elif choice==&#39;4&#39;:            x=float(input(&#39;请输入被除数&#39;))            y=float(input(&#39;请输入除数&#39;))            while y==0:                input(&#39;除数不能为0，按回车继续&#39;)                y=float(input(&#39;请输入除数&#39;))            result=x/y        else:            break         choicee=input(&#39;是否保留小数\n1:保留\n2:不保留&#39;)    if choicee==&#39;1&#39;:        r=int(input(&#39;请输入保留小数位数，输入零保留整数&#39;))        if r==0:            result=round(result)        else:            result=round(result,r)    else:        if choicee==&#39;2&#39;:            z=result%1            if z==0:                result=round(result)        else:            print(&#39;您输入了不符合设定的东西，系统生气了，保留原状！&#39;)    result=str(result)       print(&#39;结果是%s&#39;%result)    ct=input(&#39;是否继续？（y/n）&#39;)    if ct==&#39;n&#39;:        break    else:        continueinput(&#39;程序运行完毕，按回车键退出程序...&#39;)# 实现原理通过input函数给变量赋值并且添加各种条件分支语句进行判断，并进行计算最后输出</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的第一篇文章</title>
       <link href="/2022/12/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
       <url>/2022/12/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>

@@ -56,12 +56,18 @@
 | 状态 | 含义 |
 | --- | --- |
 | queued、running | 等待或正在分析 |
+| continue | 已保存进度，继续检索、补读或整理 |
 | completed | 当前版本的分析已完成 |
+| no_relation | 当前材料无需建立关系 |
+| waiting_content | 尚无可读正文，等待内容更新 |
 | waiting_evidence | 仍缺判断所需证据 |
 | retry | 请求或读取失败，稍后重试 |
+| policy_rejected | 建议未通过业务规则，保留拒绝原因 |
+| superseded | 旧版本或代次退出调度，历史仍保留 |
 | active | 关系或字段当前有效 |
 | candidate | 关系尚未采用 |
 | stale | 原有证据不再支持当前结果 |
+| needs_revalidation | 证据内容变化，字段等待重新核对 |
 | blocked | 本人明确解除或阻止采用 |
 
 分析完成可以没有新增关系，也可以产生多个关系。“等待证据”属于后台整理，不等于本人有一个待决定问题。

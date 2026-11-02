@@ -52,9 +52,15 @@ QQ库按群和消息保存原文、采集时间、撤回状态及文件关联。
 | hub_global_documents | 可检索文本、受控元数据、证据标识及版本 |
 | hub_global_coverage、cursors | 来源覆盖和索引进度 |
 | hub_association_jobs、runs | 增量分析、检索过程、状态和模型用量 |
+| hub_association_heads、workspaces、dependencies、changes | 当前分析代次、持久工作区、依赖与变更唤醒 |
+| hub_evidence_links、revision_compat | 消息及附件证据连接、兼容的索引版本变更 |
 | hub_global_relations、facts、audit | 类型关系、有效字段、证据与纠正历史 |
+| hub_fact_claim_history | 字段主张、引用及生效和撤回历史 |
+| hub_owner_actions、legacy | 明确操作的原始目标及旧操作迁移记录 |
 
-课程、文件和包含关系不形成任务身份。同一身份组最多包含一份原生任务，小雅和学习通的具体任务、提交与个人完成状态分别保留。
+课程、文件和包含关系不形成任务身份。同一身份组最多包含一份原生任务，整组关联都遵守本人解除决定，小雅和学习通的具体任务、提交与个人完成状态分别保留。
+
+完成与归档保留原始操作目标，关联对象的状态由当前身份关系计算。解除错误关联后，不会继续沿用从另一对象复制的个人状态；旧记录保留，迁移时不推测未知的原始操作对象。
 
 ## 归档与历史
 

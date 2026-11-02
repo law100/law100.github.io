@@ -58,6 +58,7 @@
 | queued、running | 等待或正在分析 |
 | continue | 已保存进度，继续检索、补读或整理 |
 | paused_history | 历史积压已暂停，进度与结果保留 |
+| needs_attention | 当前分析已挂起，查看具体错误；既有结果与进度保留 |
 | completed | 当前版本的分析已完成 |
 | no_relation | 当前材料无需建立关系 |
 | waiting_content | 尚无可读正文，等待内容更新 |

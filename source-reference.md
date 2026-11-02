@@ -62,6 +62,8 @@ Dashboard位于独立的`law100-dashboard/beszel`项目：校园采集为`deploy
 
 关联工作区与调度为`campus/association_jobs.py`、`association_worker.py`；证据索引及消息附件连接为`global_read.py`、`evidence_reader.py`；身份、个人操作与事实投影为`identity_graph.py`、`owner_actions.py`、`fact_projection.py`。本轮限定发布入口为`deploy/apply-association-release.py`，只迁移总库，不修改来源库或技能。
 
+新内容的小上下文模型包为`campus/association_payload.py`，明确群课程的文件对应为`association_routing.py`。减量发布使用`deploy/apply-association-lean-release.py`；该入口保留历史暂停和已挂起的异常任务，不改来源接口或技能。
+
 手册位于`manual/`，配置为`.vitepress/config.mjs`，日常静态发布为`scripts/publish-static.py`。系统服务模板和技能分别位于`deploy/`与`hermes/`，线上副本按实际安装位置核对。
 
 ## 相关内容

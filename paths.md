@@ -32,6 +32,8 @@
 
 学习通来源库为`private/chaoxing.sqlite3`；全局索引、队列和关系表位于`private/campus.sqlite3`。Dashboard校园摘要为`/var/lib/law100-campus-dashboard/overview.json`，由独立只读采集任务生成。
 
+`private/campus.lock`协调总库写入；`private/pending-mappings/`保存学校映射续接请求及完成记录，包含私有业务状态。
+
 ## 本机服务Socket
 
 | 路径 | 服务 |

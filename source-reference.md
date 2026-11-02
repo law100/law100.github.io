@@ -29,6 +29,7 @@
 | 主题 | 实现位置 |
 | --- | --- |
 | 来源与课程映射 | campus/sources.py、mapping.py、store.py |
+| 写入协调、映射续接和课次分组 | campus/write_lock.py、mapping_queue.py、schedule_slots.py |
 | 一般事项整理 | campus/hub.py、hub_project.py、hub_read.py、hub_worker.py |
 | 课程补充 | campus/timetable.py、timetable_policy.py、timetable_worker.py |
 | 稳定事项和本人问题 | campus/core.py、core_events.py、core_questions.py、core.sql |
@@ -54,6 +55,8 @@
 ## 发布、看板和文档
 
 统一发布使用`deploy/campus_release.py`。业务解释、学校来源、归档和全局关联分别使用`apply-business-release.py`、`apply-school-release.py`、`apply-task-relations.py`、`apply-global-association.py`。
+
+映射性能及写入协调使用`deploy/apply-mapping-release.py`，发布时等待学校同步空闲，保留来源采集与现有技能。
 
 Dashboard位于独立的`law100-dashboard/beszel`项目：校园采集为`deploy/law100/campus_collect.py`，页面为`internal/site/src/components/routes/campus-hub.tsx`。Dashboard发布不属于校园业务版本包。
 

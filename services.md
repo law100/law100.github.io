@@ -9,7 +9,7 @@
 | law100-campus-query | 总库只读查询 | campus-query客户端 |
 | law100-campus-refresh | 接收人工刷新、查询进度 | 学校同步锁与任务状态 |
 | law100-campus-sync | 读取三个学校来源并映射 | 配套sync.timer |
-| law100-campus-hub-project | 本地来源投影到总库 | 配套hub-project.timer |
+| law100-campus-hub-project | 本地来源投影、学校映射续接 | 配套hub-project.timer |
 | law100-campus-hub-worker | 一般事项及全局关联线程 | hub_jobs、关联队列与模型接口 |
 | law100-campus-timetable | 课程补充管理入口 | campus-timetable客户端 |
 | law100-campus-timetable-worker | 分析与映射补充课表 | 平台通知、QQ及本人课程输入 |

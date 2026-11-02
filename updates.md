@@ -1,6 +1,6 @@
 # 近期更新
 
-本页记录近期已上线的能力及使用入口。当前Campus Hub业务登记版本为`2026.11.02-association-lean-1`；最新运行状态通过机器人和Dashboard查看。
+本页记录近期已上线的能力及使用入口。当前Campus Hub业务登记版本为`2026.11.02-association-lean-2`；最新运行状态通过机器人和Dashboard查看。
 
 ## 2026年11月2日
 
